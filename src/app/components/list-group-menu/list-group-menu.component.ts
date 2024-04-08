@@ -16,6 +16,7 @@ export class ListGroupMenuComponent {
     {text: 'Event Bind Example', routerLink: 'event-bind-example'},
     {text: 'Simple Datatable Example', routerLink: 'simple-example'},
     {text: 'Component Output Example', routerLink:
-    'component-output-example'}
+    'component-output-example'},
+    {text: 'Template Driven Form Example', routerLink: 'template-driven-form-example'}
   ]
 }
