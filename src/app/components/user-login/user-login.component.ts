@@ -1,6 +1,6 @@
 import { Component, Inject, inject } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { jwtDecode } from 'jwt-decode';
 import { Credentials, LoggedInUser } from 'src/app/shared/interfaces/user';
 import { UserService } from 'src/app/shared/services/user.service';
@@ -8,7 +8,7 @@ import { UserService } from 'src/app/shared/services/user.service';
 @Component({
   selector: 'app-user-login',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule,RouterLink],
   templateUrl: './user-login.component.html',
   styleUrl: './user-login.component.scss',
 })
